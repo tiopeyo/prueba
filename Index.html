@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Wampo Loa - IA para el Alto Loa</title>
+  <meta name="description" content="Proyectos de Inteligencia Artificial para mejorar la educación, cultura y sostenibilidad en comunidades indígenas del Alto Loa, Región de Antofagasta.">
+
+  <!-- Google Fonts: Inter y Playfair Display -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+
+  <style>
+    :root {
+      --primary: #8B5A2B;   /* Marrón tierra */
+      --secondary: #D2B48C; /* Beige desértico */
+      --accent: #C19A6B;    /* Dorado suave */
+      --text: #333;
+      --light: #F8F4E9;
+      --dark: #2E2925;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Inter', sans-serif;
+      color: var(--text);
+      background-color: var(--light);
+      line-height: 1.7;
+    }
+
+    header {
+      background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('https://images.unsplash.com/photo-1551632832-7756f1016992?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80') no-repeat center center/cover;
+      color: white;
+      text-align: center;
+      padding: 120px 20px;
+    }
+
+    header h1 {
+      font-family: 'Playfair Display', serif;
+      font-size: 2.8rem;
+      margin-bottom: 15px;
+    }
+
+    header p {
+      font-size: 1.2rem;
+      max-width: 700px;
+      margin: 0 auto;
+    }
+
+    nav {
+      background-color: var(--primary);
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+
+    nav ul {
+      display: flex;
+      justify-content: center;
+      list-style: none;
+    }
+
+    nav a {
+      color: white;
+      padding: 15px 20px;
+      text-decoration: none;
+      font-weight: 600;
+      transition: background 0.3s;
+    }
+
+    nav a:hover {
+      background-color: var(--accent);
+    }
+
+    section {
+      padding: 80px 20px;
+      max-width: 1100px;
+      margin: 0 auto;
+    }
+
+    .section-title {
+      text-align: center;
+      font-family: 'Playfair Display', serif;
+      color: var(--primary);
+      font-size: 2rem;
+      margin-bottom: 40px;
+    }
+
+    .card-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 30px;
+      margin-top: 30px;
+    }
+
+    .card {
+      background: white;
+      border-radius: 12px;
+      overflow: hidden;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+      transition: transform 0.3s;
+    }
+
+    .card:hover {
+      transform: translateY(-10px);
+    }
+
+    .card img {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+    }
+
+    .card-content {
+      padding: 20px;
+    }
+
+    .card h3 {
+      color: var(--primary);
+      margin-bottom: 10px;
+    }
+
+    .card p {
+      font-size: 0.95rem;
+    }
+
+    .quote {
+      font-style: italic;
+      text-align: center;
+      max-width: 800px;
+      margin: 50px auto;
+      padding: 30px;
+      background: var(--secondary);
+      border-left: 5px solid var(--primary);
+      color: var(--dark);
+      font-size: 1.1rem;
+    }
+
+    .cta {
+      text-align: center;
+      margin: 60px 0;
+    }
+
+    .btn {
+      display: inline-block;
+      background: var(--primary);
+      color: white;
+      padding: 15px 30px;
+      border-radius: 50px;
+      text-decoration: none;
+      font-weight: 600;
+      transition: background 0.3s;
+    }
+
+    .btn:hover {
+      background: #6d4823;
+    }
+
+    footer {
+      background: var(--dark);
+      color: white;
+      text-align: center;
+      padding: 30px 20px;
+      margin-top: 50px;
+    }
+
+    footer p {
+      font-size: 0.9rem;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Encabezado -->
+  <header>
+    <h1>Wampo Loa</h1>
+    <p>Inteligencia Artificial al servicio de las comunidades del Alto Loa</p>
+  </header>
+
+  <!-- Navegación -->
+  <nav>
+    <ul>
+      <li><a href="#educacion">Educación</a></li>
+      <li><a href="#cultura">Cultura</a></li>
+      <li><a href="#agua">Agua & Sostenibilidad</a></li>
+      <li><a href="#turismo">Turismo Regenerativo</a></li>
+      <li><a href="#contacto">Colaborar</a></li>
+    </ul>
+  </nav>
+
+  <!-- Sección: Educación -->
+  <section id="educacion">
+    <h2 class="section-title">📚 Educación Intercultural con IA</h2>
+    <p>Fortaleciendo escuelas rurales del Alto Loa con tecnología accesible y respetuosa de la cosmovisión atacameña.</p>
+    <div class="card-container">
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1543232233-33292ade11f8?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Estudiantes">
+        <div class="card-content">
+          <h3>Amauta AI Offline</h3>
+          <p>Tablets con inteligencia artificial que funcionan sin internet, enseñando matemáticas, ciencias y kunza desde ejemplos del desierto.</p>
+        </div>
+      </div>
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1523580494863-6f3031224c94?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Maestro">
+        <div class="card-content">
+          <h3>Sach’a AI (Asistente Docente)</h3>
+          <p>Herramienta para profesores que sugiere actividades interculturales y traduce contenidos al kunza con apoyo de ancianos.</p>
+        </div>
+      </div>
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1593642634367-d91a135587b5?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Proyecto">
+        <div class="card-content">
+          <h3>Wampo Educativo</h3>
+          <p>Estudiantes resuelven problemas reales (agua, agricultura) usando sensores y IA, con validación de círculos de sabiduría.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Sección: Cultura -->
+  <section id="cultura" style="background-color: #f0ebe0;">
+    <h2 class="section-title">🎨 Preservación del Patrimonio Cultural</h2>
+    <p>Revitalizando el kunza, relatos orales y artesanías con tecnología comunitaria.</p>
+    <div class="card-container">
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1617791160588-2443f98c84bf?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Kunza">
+        <div class="card-content">
+          <h3>Kunza Bot</h3>
+          <p>Chatbot de voz que enseña la lengua ancestral mediante juegos, cuentos generados por IA y grabaciones de ancianos.</p>
+        </div>
+      </div>
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1518173946687-a4c8892bbd9f?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Artesanía">
+        <div class="card-content">
+          <h3>Teké Loa (Trueque Digital)</h3>
+          <p>Plataforma con IA que autentica artesanías atacameñas y conecta artesanos con turistas, eliminando intermediarios.</p>
+        </div>
+      </div>
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1551632832-7756f1016992?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Archivo">
+        <div class="card-content">
+          <h3>Biblioteca Viva del Loa</h3>
+          <p>Archivo digital comunitario donde relatos, música y conocimientos se preservan con IA, bajo control de los pueblos.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Sección: Agua y Sostenibilidad -->
+  <section id="agua">
+    <h2 class="section-title">💧 Gestión Inteligente del Agua</h2>
+    <p>Protegiendo el río Loa con monitoreo comunitario y predicción mediante IA.</p>
+    <div class="card-container">
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1534438327276-14e5300c3a48?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Río Loa">
+        <div class="card-content">
+          <h3>Sistema Loa Inteligente</h3>
+          <p>Sensores IoT + IA predicen sequías y alertan comunidades sobre caudal y calidad del agua, con datos gestionados localmente.</p>
+        </div>
+      </div>
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1612845613570-32d17920548c?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Agricultura">
+        <div class="card-content">
+          <h3>Pachamama AI</h3>
+          <p>Asistente agrícola que combina satélites, sensores y calendarios ancestrales para optimizar cultivos en condiciones extremas.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Sección: Turismo -->
+  <section id="turismo" style="background-color: #f0ebe0;">
+    <h2 class="section-title">🌿 Turismo Regenerativo</h2>
+    <p>Experiencias auténticas que respetan el territorio y benefician a las comunidades.</p>
+    <div class="card-container">
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1551632832-7756f1016992?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="San Pedro">
+        <div class="card-content">
+          <h3>App Wampo Loa</h3>
+          <p>Realidad aumentada que muestra la historia del río y sitios sagrados al escanear el paisaje, narrado en kunza por ancianos.</p>
+        </div>
+      </div>
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1575586400681-5c88e55914c0?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Ceremonia">
+        <div class="card-content">
+          <h3>Créditos de Respeto</h3>
+          <p>Blockchain para asegurar que el turismo compense a las comunidades y proteja sitios arqueológicos mediante ingresos directos.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Cita Inspiradora -->
+  <div class="quote">
+    "La educación no es llenar un vaso, sino encender un <strong>calvario</strong>."  
+    <br><em>— Maestra atacameña de Tulor</em>
+  </div>
+
+  <!-- Sección: Colaborar -->
+  <section id="contacto">
+    <h2 class="section-title">🤝 Colabora con Wampo Loa</h2>
+    <p>Buscamos alianzas con comunidades, instituciones, desarrolladores y financiadores éticos para hacer realidad estos proyectos.</p>
+    <div class="cta">
+      <a href="mailto:contacto@wampoloa.cl" class="btn">Enviar Propuesta</a>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2025 Wampo Loa | Proyecto comunitario para la innovación con identidad atacameña</p>
+    <p>Diseñado con respeto al Convenio 169 de la OIT y el derecho a la autodeterminación.</p>
+  </footer>
+
+</body>
+</html>
